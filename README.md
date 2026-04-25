@@ -1,6 +1,10 @@
 # Pola29 — GitHub Projects ダッシュボード
 
+**リポジトリ:** [github.com/Pola29/pola29-project-dashboard](https://github.com/Pola29/pola29-project-dashboard)
+
 Organization **Pola29** の**単一** [GitHub Project (v2)](https://docs.github.com/en/issues/planning-and-tracking-with-projects) を中核に、リポジトリ横断のタスク管理を行うための**運用ハブ**リポジトリです。
+
+`gh project` を使う端末では、初回にスコープを足す: `gh auth refresh -s read:project`（`list` 等で必要な場合あり）。
 
 ## 方針（確定事項）
 
@@ -28,7 +32,7 @@ pola29-project-dashboard/
 ## クイックスタート
 
 1. [GitHub CLI](https://cli.github.com/) を入れ、`gh auth login` で **Pola29** にアクセス可能にする。  
-2. Web で **Pola29 の Project (v2)** を開き、URL を `docs/WORKFLOW.md` に追記する（手順内のプレースホルダを置き換え）。  
+2. Web で **Pola29 の Project (v2)** を 1 本用意（または既存を採用）し、URL を本 README および `docs/WORKFLOW.md` の `PROJECT_NUMBER` プレースホルダを置き換え（`gh project list --owner Pola29` でも番号を確認可・要 `read:project`）。  
 3. `docs/ITERATION.md` に従い、**Iteration** の粒度（例: 1 週間）と**命名**を揃える。  
 4. 新規タスク: **各リポで Issue 作成** → その Issue を **Org Project に追加** → **Iteration** を付与。
 
