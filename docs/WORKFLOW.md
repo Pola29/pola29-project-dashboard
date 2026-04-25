@@ -32,7 +32,7 @@
 ## 5. よく使う Project URL
 
 ```
-https://github.com/orgs/Pola29/projects/PROJECT_NUMBER
+https://github.com/orgs/Pola29/projects/1
 ```
 
 `PROJECT_NUMBER` は Org → Projects で開いたページの URL か、`gh project list --owner Pola29` で確認可能。
